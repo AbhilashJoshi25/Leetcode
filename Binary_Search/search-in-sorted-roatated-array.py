@@ -28,4 +28,6 @@ def binary_search(arr, x):
       else:
         high = mid - 1
   return -1
-    
+
+# TC: O(logN) for binary search and if.. else.. statements are doing constant time work while comparing
+# SC: O(1) As we are not using any auxilary space
