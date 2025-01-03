@@ -22,7 +22,7 @@ def binary_search(arr, target):
 
   # target is not in arr, but left is at insertion point
   return left
-  -----------------------------------------------------------------------------
+  
   def binary_search_recursive(arr, target, low, high):
     #base case for recursive
     if low > high:
@@ -34,4 +34,3 @@ def binary_search(arr, target):
       return binary_search_recursive(arr, target, low, mid - 1)
     else:
       return binary_search_recursive(arr, target, mid + 1, high)
-  -----------------------------------------------------------------------------
