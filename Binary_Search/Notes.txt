@@ -20,7 +20,9 @@ def binary_search(arr, target):
     else:
       left = mid + 1
   return left
-
+#TC: O(logN)
+#SC: O(1)
+============================================================================
   #Recursive
   def binary_search_recursive(arr, target, low, high):
     #base case for recursive
@@ -33,3 +35,7 @@ def binary_search(arr, target):
       return binary_search_recursive(arr, target, low, mid - 1)
     else:
       return binary_search_recursive(arr, target, mid + 1, high)
+#For recursive we use extra stack space so SC: O(logN)
+============================================================================
+   #Whenever low > high or high < low that means the element is not present in the array and for unsuccessful searches the TC: O(logN) as we do O(logN) iterations.
+==============================================================================
