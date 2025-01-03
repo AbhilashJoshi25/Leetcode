@@ -50,3 +50,7 @@ class Solution:
             else:
                 return mid
         return - 1
+'''
+TC: O(logN) # Everytime we are calculating mid we are dividing the subarray into two parts
+SC: O(1) # As we are not using any extra auxiliary space
+'''
